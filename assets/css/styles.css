@@ -1,16 +1,26 @@
+/*Churchil House 2020*/
+
+@import url(reset.css)
+/*    http://meyerweb.com/eric/tools/css/reset/ */
+
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Lato:wght@400;700&display=swap');
+
+hmtl {
+    font-size: 20px;
+}
 
 body {
     background-color: #ffffff;
-    color: #515A5A;
+    color: #4D4D4C;
 
     /*    make sure you set family and size on body*/
     font-family: 'Lato', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 
-/*Typography*/
-h1,
+
+/*Typographyic Styles*/
+
 h2,
 h3,
 h4,
@@ -18,116 +28,422 @@ h5,
 h6 {
 
     margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 h1 {
     font-family: 'EB Garamond', serif;
     display: inline-block;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 28px;
+    /*    padding-top: 20px;*/
+    /*    padding-bottom: 20px;*/
+    font-size: 1.3em;
+    color: #4D4D4C;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 h2 {
     font-family: 'EB Garamond', serif;
-    font-size: 25px;
-    border-bottom: 1px solid white;
-    padding: 10 0;
+    font-size: 65px;
+    border-bottom: 4px solid #4D4D4C;
+    padding-bottom: 11px;
+    padding-top: 30px;
     letter-spacing: 1px;
+    /*    box-sizing: border-box;*/
+}
+
+h1,
+h2 {
+    font-weight: 600;
 }
 
 h3 {
     font-family: 'Lato', sans-serif;
-    font-size: 22px;
+    font-size: 26px;
+    font-weight: 700;
+    padding: 0px 0 10 0;
 }
 
 li {
-    line-height: 24px;
-    list-style-type: circle;
+    list-style-type: disc;
+    margin-left: 20px;
+    line-height: 1.5em;
+    margin-top: 20px;
 }
 
 p {
     font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    margin: 10px 0 20px 0;
+    font-size: 20px;
+    line-height: 1.5em;
+    margin: 20px 0 2px 0;
+
 }
 
-/* anchor styles */
+blockquote {
+    font-family: 'EB Garamond', serif;
+    font-size: 45px;
+    line-height: 60px;
+}
+
+/*-----------------------------*/
+
+/* Anchor Styles */
 
 a {
-    color: #ffffff;
-    background-color: black;
+    color: #9F9D9C;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #4D4D4C;
 
 }
 
 a:visited {
-    color: #cccccc;
-
+    /*    color: #4D4D4C;*/
 }
 
 a:active {
-    color: yellow
+    color: #F2DD0D;
 }
 
 /*Main containers*/
+
 .wrapper {
-    width: 980px;
+    /*    width: 980px;*/
+    width: 60%;
     /*    TOP RIGHT BOTTOM LEFT*/
     margin: 0 auto;
 }
 
 header {
-    padding: 20px;
+    padding: 3rem;
 }
 
+/*h1,
+nav {
+    padding: 0.25rem 0 0.25rem 0;
+}
 
-
-nav {}
-
-nav ul {
+nav {
     float: right;
+    /*    color: #9F9D9C;*/
+/*    padding-top: 21px;*/
+
 }
+
+
+/*nav ul {}
 
 nav ul li {
-    font-family: 'EB Garamond', serif;
+    font-family: 'Lato', sans-serif;
     display: inline;
-    font-size: 24px;
-    margin-right: 10px;
+    font-size: 1rem;
+    /*    margin-right: 0.5rem;*/
 
 }
 
-nav ul li a {
-    color: #000000;
+/*nav ul li a {
+    color: #9F9D9C;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 0.5rem 0;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.currentpage {
     text-decoration: none;
+    color: #4D4D4C;
+}*/
+
+.hero {
+    min-height: 400px;
+    background-image: url(../images/churchill-house-26.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-color: #393838;
+    padding: 22.5rem 0 0 0;
 }
+
+
 
 main {
-    padding: 20px;
-    overflow: auto;
+    padding: 20px 0;
+    overflow: inherit;
+}
+
+/*.overlay {*/
+position: absolute;
+top: o;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+
+.text-container {
+    width: 60%;
+    background-color: blueviolet;
+}
+
+article {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
 }
 
 footer {
     color: #ffffff;
     padding: 20px;
+    /*    margin-top: 200px;*/
+    background-color: #393838;
     /*    display: none;*/
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 80%;
 }
 
 .leftimg {
-    width: 65%;
-    float: left;
-    border: 2px solid black;
+
+    /*    width: 65%;*/
+    /*    float: left;*/
+    max-width: 100%;
+    height: auto;
+    width: 16rem;
+    border: 2px solid #9F9D9C;
     padding: 30px;
     background-color: white;
     margin: 20px 0;
 }
+
+
+
+/*----------------*/
+
+/* Screen reader only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
+}
+
+/* Button styling */
+.menu-toggle {
+    display: inline-block;
+    /*    padding: .75em 15px;*/
+    line-height: 1em;
+    font-size: 1em;
+    color: #333;
+    width: 40px;
+    height: 40px;
+    float: right;
+}
+
+.icon-hamburger {
+    fill: red;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+    color: #c00;
+}
+
+/*
+ Default styles + Mobile first
+ Offscreen menu style
+*/
+.main-menu {
+    display: none;
+    top: 0;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: visible;
+    /*    transition: left 0.3s ease,*/
+    z-index: 999;
+}
+
+.main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 2.5em 0 0;
+    min-height: 100%;
+    width: 200px;
+    background: #1a1a1a;
+}
+
+.main-menu a {
+    display: block;
+    padding: .75em 15px;
+    line-height: 1em;
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #383838;
+}
+
+.main-menu li:first-child a {
+    border-top: 1px solid #383838;
+}
+
+.main-menu a:hover,
+.main-menu a:focus {
+    background: #333;
+    text-decoration: underline;
+}
+
+.menu-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    fill: red;
+}
+
+
+
+/*
+ On small devices, allow it to toggle...
+*/
+/*
+ :target for non-JavaScript
+ [aria-expanded] will be used if/when JavaScript is added to improve interaction, though it's completely optional.
+*/
+.main-menu:target,
+.main-menu[aria-expanded="true"] {
+    display: block;
+    /*    left: 0;*/
+    outline: none;
+
+}
+
+.main-menu:target .menu-close,
+.main-menu[aria-expanded="true"] .menu-close {
+    z-index: 1001;
+}
+
+.main-menu:target ul,
+.main-menu[aria-expanded="true"] ul {
+    position: relative;
+    z-index: 1000;
+}
+
+/* 
+ We could us `.main-menu:target:after`, but
+ it wouldn't be clickable.
+*/
+.main-menu:target + .backdrop,
+.main-menu[aria-expanded="true"] + .backdrop {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    background: #000;
+    background: rgba(0, 0, 0, .85);
+    cursor: default;
+}
+
+@supports (position: fixed) {
+
+    .main-menu,
+    .main-menu:target + .backdrop,
+    .main-menu[aria-expanded="true"] + .backdrop {
+        position: fixed;
+    }
+}
+
+/*
+ Larger screen styling
+ Horizontal menu
+*/
+@media (min-width: 768px) {
+
+    .menu-toggle,
+    .main-menu .menu-close {
+        display: none;
+    }
+
+    /* Undo positioning of off-canvas menu */
+    .main-menu {
+        position: relative;
+        left: auto;
+        top: auto;
+        height: auto;
+        display: block;
+    }
+
+    .main-menu ul {
+        display: flex;
+
+        /* Undo off-canvas styling */
+        padding: 0;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        height: auto;
+        width: auto;
+        background: none;
+    }
+
+    .main-menu a {
+        color: #06c;
+        border: 0 !important;
+        /* Remove borders from off-canvas styling */
+    }
+
+    .main-menu a:hover,
+    .main-menu a:focus {
+        background: none;
+        /* Remove background from off-canvas styling */
+        color: #c00;
+    }
+}
+
+
+
+/*-----------------*/
+
+
+
+/*Media */
+
+@media (max-width: 900px; ) {
+    .grid-2-col {
+        grid-template-columns: repeat (2, 1fr);
+        grid-column-gap: 10px;
+    }
+
+    .grid-2-col {
+        max-height: 400px;
+        margin: 0 auto;
+
+    }
+}
+
+@media (max-width: 750px; ) {
+    nav {
+        display: initial;
+    }
+}
+
+@media (max-width: 510px; ) {
+    /*    Hamburger menu appears*/
