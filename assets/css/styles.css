@@ -132,7 +132,7 @@ a:active {
 /*--------- Main containers ----------*/
 
 .wrapper {
-    width: 840px;
+    max-width: 840px;
     margin: 0 auto;
 
 }
@@ -187,7 +187,6 @@ nav ul li a:active {
     background-size: cover;
     background-position: top;
     background-color: #4D4D4C;
-    padding: 5rem 0 0 0;
 }
 
 
@@ -220,7 +219,6 @@ footer p {
 
 .text-container {
     width: 100%;
-    margin: 0 2rem 4rem 2rem;
 }
 
 
