@@ -258,4 +258,5 @@ footer p {
     padding: 1.5rem;
     margin-top: 2rem;
     background-color: white;
+    max-width: 100%;
 }
